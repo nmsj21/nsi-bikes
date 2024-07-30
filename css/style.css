@@ -20,22 +20,28 @@ header {
 }
 
 header, .up-panel {
-    /*width: 100%;*/
     background: #898383;
+    max-height: 100px;
 
 
 }
 
-.flex-container {
-    flex-wrap: nowrap;
+.top-bar {
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     flex-direction: row;
+    /*background-color:dodgerblue;*/
 }
 
-.flex-container > div {
-    width: 33.33%;
+.top-bar > div {
+    width: 100px;
 
+    /*background-color: #bd1212;*/
+
+}
+.top-bar > div span {
+    white-space: nowrap;
 }
 
 * a {
@@ -59,4 +65,77 @@ header, .up-panel {
     margin: 4px;
     padding-right: 350px;
     padding-top: 5px;
+}
+
+.abme {
+    text-align: center;
+    font-size: 40px;
+    color: #898383;
+    padding: 40px;
+    text-shadow: white 3px -4px;
+}
+
+.wetxt {
+    text-shadow: white -3px 4px;
+    font-size: 40px;
+    padding: 40px;
+    text-align: center;
+    color: #898383;
+}
+
+.info-text-boxes {
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.info-text-box > div {
+    padding-right: 20px;
+
+    width: 20%;
+}
+
+.textbox {
+    margin-right: 20%;
+    margin-top: 1%;
+    max-width: 50%;
+    padding: 10px;
+    background: #898383;
+    color: white;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.about {
+    padding-right: 10px;
+}
+
+ header 
+
+
+@media screen and (max-width: 877px) {
+    /*.top-bar {*/
+    /*    flex-wrap: wrap;*/
+    /*    width: clamp(600px, 50%, 700px);*/
+
+    }
+    .up-panel{
+        max-width: 1px;
+    }
+
+    .top-bar > div{
+
+    }
+    .logo {
+        height: 80px;
+
+    }
+
+    .toril, .contacts{
+        padding-right: 2px;
+
+    }
+
 }
