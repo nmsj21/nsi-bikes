@@ -8,15 +8,37 @@
             background: #898383;
         }
     </style>
+
 </head>
 <body>
 <header>
-    <div><a href="."><img class="logo" src="logo.png" alt="Nsi logo"/></a></div>
+    <div><a href="."><img class="logo" src="nsi-big.png" alt="Nsi logo"/></a></div>
 </header>
-    <p style="color: red; font-size: 60px; text-align: center; background: black;">NOTHING HERE! GO AWAY YOU HACKER!</p>
+
+<input id="name" type="text" placeholder="Username" style="background-color: white"><br>
+<input id="pass" style="background-color: white;" type="password" placeholder="Password"><br>
+<button onclick="passalert()" style="background-color: darkgrey">LOGIN</button>
+<script>
+    function passalert() {
+        // alert("Wrong Password or Username");
+        let username = document.getElementById("name").value;
+        let userpass = document.getElementById("pass").value;
+        if (username === 'admin' && userpass === 'root') {
+            /*yeah, I know that this is not a secure login. Had to try tho.*/
+            alert("You are logged in")
+        } else {
+            alert("wrong password or username")
+        }
+    }
+</script>
+
 <footer>
     <h6 style="padding-top: 335px">&#169;2024 NSI Bikes | All Rights Reserved | Built By NSI</h6>
 </footer>
 
 </body>
+<script>
+
+</script>
 </html>
+

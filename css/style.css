@@ -36,10 +36,8 @@ header, .up-panel {
 
 .top-bar > div {
     width: 100px;
-
-    /*background-color: #bd1212;*/
-
 }
+
 .top-bar > div span {
     white-space: nowrap;
 }
@@ -59,6 +57,16 @@ header, .up-panel {
 
 }
 
+.about, .contacts, .toril {
+    padding-left: 2%;
+
+}
+
+
+.droneshots {
+    padding-left: 60%;
+    padding-right: 2%;
+}
 
 .logo {
     height: 80px;
@@ -112,7 +120,7 @@ header, .up-panel {
     padding-right: 10px;
 }
 
- header 
+header
 
 
 @media screen and (max-width: 877px) {
@@ -120,22 +128,45 @@ header, .up-panel {
     /*    flex-wrap: wrap;*/
     /*    width: clamp(600px, 50%, 700px);*/
 
-    }
-    .up-panel{
-        max-width: 1px;
-    }
+}
 
-    .top-bar > div{
+.up-panel {
+    max-width: 1px;
+}
 
-    }
-    .logo {
-        height: 80px;
+.top-bar > div {
 
-    }
+}
 
-    .toril, .contacts{
-        padding-right: 2px;
+.logo {
+    height: 80px;
 
-    }
+}
 
+.toril, .contacts {
+    padding-right: 2px;
+
+}
+
+.langse {
+    color: #ff0006;
+}
+
+.login {
+    background-color: #ff0006
+}
+
+.lang-box {
+    text-decoration: #ff0006;
+    border-color: #898383;
+    background-color: #898383;
+
+}
+
+.lang-box > div {
+
+}
+
+.lang-box:hover {
+    color: black;
 }
