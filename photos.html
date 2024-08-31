@@ -20,23 +20,38 @@
     </div>
 </header>
 <p class="wetxt">NSI PHOTOS</p>
-<p style="padding-left: 10px">DISCLAIMER: Quality has been lowered from these pictures for free use.
-    Remember<br> to share my website(nsi21.online) in all places these low quality photos are used!</p>
+<div class="buttons">
+    <button class="button-template" onclick="copyright_info_notification()">USE INFO</button>
+    <button class="button-template" onclick="better_quality_info()">4K PICTURES</button>
+</div>
 <div class="up-panel"></div>
 <main>
-    <div class="photos">
-        <div><img class="img-template1" src="lake1.jpg" alt="Photo from Halimasjärvi"></div>
-        <div><p class="desc-template1">This photo is taken at <a href="https://maps.app.goo.gl/dYL9hrrzsvT6UihBA"
-                                                                 target="_blank">Halimasj&#228;rvi</a>.
-            Photos are sold in NEF or JPEG quality(4k photos)</p></div>
+    <div class="content-photos">
+        <div id="0001">
+            <div class="id-placement"><p class="id-template1">ID:0001</p></div>
+            <div><img class="img-template1" src="lake1.jpg" alt="Photo from Halimasjärvi"></div>
+            <div><p class="desc-template1">This photo is taken at <a
+                    href="https://maps.app.goo.gl/dYL9hrrzsvT6UihBA" target="_blank">Halimasj&#228;rvi</a>. Photos
+                are sold in NEF or JPEG quality(4k photos)</p></div>
+        </div>
+        <div itemid="0002">
+            <div class="id-placement"><p class="id-template1">ID:0002</p></div>
+            <div><img class="img-template1" src="flower1.jpg" alt="flower"></div>
+            <div><p class="desc-template1">Beautiful flower in Finnish nature. Photos
+                are sold in NEF or JPEG quality(4k photos)</p></div>
+        </div>
     </div>
 </main>
 <footer>
     <h6 style="padding-top: 335px; padding-left: 10px"> &#169;2024 NSI Bikes | All Rights Reserved | Built By Niilo</h6>
 </footer>
 <script>
-
-
+    function copyright_info_notification() {
+        alert("DISCLAIMER: Quality has been lowered from these pictures for free use. Remember to share my website(nsi21.online) in all places these low quality photos are used!")
+    }
+    function better_quality_info(){
+        alert("All photos on this website are sold in NEF and/or JPEG 4K. We can agree price for these pictures. Just contact me.")
+    }
 </script>
 </body>
 </html>
