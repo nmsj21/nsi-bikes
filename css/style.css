@@ -18,10 +18,9 @@ header {
     text-align: center;
 }
 
-header, .up-panel {
+header {
     background: #898383;
     max-height: 120px;
-
 }
 
 .top-bar {
@@ -32,7 +31,6 @@ header, .up-panel {
     /*background-color:dodgerblue;*/
     justify-content: space-between;
     align-items: center;
-
 
 }
 
@@ -158,7 +156,7 @@ a:hover {
     border-radius: 20px;
 }
 
-.vid-template1{
+.vid-template1 {
     width: 100%;
     max-width: 750px;
     height: auto;
@@ -183,7 +181,7 @@ a:hover {
 
 
 .img-template2 {
-    height:100%;
+    height: 100%;
     width: 100%;
     max-height: 700px;
     max-width: 400px;
@@ -229,7 +227,7 @@ a:hover {
     justify-content: space-around;
 }
 
-.map-template1{
+.map-template1 {
     border-radius: 20px;
     width: 100%;
     max-width: 750px;
@@ -262,6 +260,16 @@ a:hover {
 
 }
 
+.flag-settings{
+    width: 250px;
+    flex-direction: row;
+    border-style: solid;
+    /*font-size: 20px;*/
+    padding: 10px;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
 footer a {
     color: white;
 
@@ -277,6 +285,8 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /*position: relative;*/
+    top: 0;
     width: 100%;
     background: #898383;
 }
@@ -290,9 +300,37 @@ footer {
 .contacts {
     color: white;
     align-content: center;
-    padding-right: 50px;
+    padding-right: 15px;
 }
 
+.lang-box {
+    width: 100%;
+    position: fixed;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+
+}
+
+.lang_questions {
+    width: 700px;
+    height: 500px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    background-color: #898383;
+    /*padding: 5px;*/
+    border-color: white;
+    border-style: solid;
+    font-size: 20px;
+    border-width: 5px;
+    border-radius: 10px;
+    align-content: center;
+    justify-content: center;
+
+}
 
 @media screen and (max-width: 780px) {
     .links {
@@ -311,7 +349,7 @@ footer {
         height: 110px;
     }
 
-    header, .up-panel {
+    header {
         max-height: 600px;
     }
 
