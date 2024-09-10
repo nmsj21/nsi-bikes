@@ -9,6 +9,14 @@ html {
     margin: 0;
 }
 
+a {
+    color: inherit;
+}
+
+.menu-bar {
+    display: none;
+}
+
 button:hover {
     color: black;
 }
@@ -40,7 +48,7 @@ header {
     flex-direction: row;
     display: flex;
     margin: 20px;
-    /*padding-top: 10px;*/
+    padding-top: 10px;
     /*gap: 20px;*/
     justify-content: space-between;
     text-decoration: underline;
@@ -49,16 +57,26 @@ header {
 .links {
     display: flex;
     flex-direction: row;
-    padding-right: 490px;
+    /*padding-right: 490px;*/
     gap: 10px;
+}
+
+.link-group{
+    padding-right: 490px;
+}
+
+.link-group-en{
+     padding-right: 587px
 }
 
 .top-bar > div {
     width: 100px;
 }
 
-.top-bar > div span {
+header > div span {
     white-space: nowrap;
+    overflow: hidden;
+    text-transform: uppercase;
 }
 
 header a {
@@ -260,7 +278,7 @@ a:hover {
 
 }
 
-.flag-settings{
+.flag-settings {
     width: 250px;
     flex-direction: row;
     border-style: solid;
@@ -333,20 +351,58 @@ footer {
 }
 
 @media screen and (max-width: 780px) {
-    .links {
-        display: flex;
-        flex-direction: column;
-        font-size: 19px;
-        padding-right: 50px;
-        align-items: start;
+    header {
+        font-size: 1.2rem;
+    }
+
+    .toril, .price{
+        padding-right: 8px;
+    }
+
+    .button-template {
+        border-color: white;
+        border-style: solid;
+        font-size: 1rem;
+        border-width: 2px;
+        border-radius: 10px;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .links  {
+        display: none;
+        gap: 10px;
     }
 
     .abme, .wetxt {
         font-size: 3.9rem;
     }
 
-    .logo {
+    .top-bar {
         height: 110px;
+    }
+
+
+    .logo {
+        height: 90px;
+    }
+
+    .menu-bar {
+        height: 80px;
+        padding: 20px;
+        display: flex;
+    }
+
+    .link-group{
+        padding-right: 10px;
+    }
+
+    .link-group-en{
+        padding-right: 10px;
+    }
+
+    .links_for_smaller_devices{
+        padding-left: 10px;
     }
 
     header {

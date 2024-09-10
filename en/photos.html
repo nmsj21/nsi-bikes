@@ -4,6 +4,7 @@
     <title>NSI Photos</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="icon" type="image/png" href="../nsi-mid.png">
+    <script type="text/javascript" src="../scripts.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="NSI bikes">
 </head>
@@ -11,14 +12,58 @@
 <header>
     <div class="top-bar">
         <div><a href="."><img class="logo" src="../nsi-big.png" alt="Nsi logo"/></a></div>
-        <div class="links">
-            <div class="droneshots"><a href="drone-shots.html"><span>DRONE SHOTS</span></a></div>
-            <div class="toril"><a href="photos.html"><span>PHOTOS</span></a></div>
-            <div class="about"><a href="about.html"><span>ABOUT ME</span></a></div>
-            <div class="price"><a href="price.html">PRICES</a></div>
+        <div class="link-group-en">
+            <div class="links">
+                <div class="droneshots"><a href="drone-shots.html"><span>DRONE shots</span></a></div>
+                <div class="toril"><a href="photos.html"><span>photos</span></a></div>
+                <div class="about"><a href="about.html"><span>about me</span></a></div>
+                <div class="price"><a href="price.html"><span>prices</span></a></div>
+                <div>
+                    <a onclick="show_question()" class="button-template"><span>language</span></a>
+                </div>
+            </div>
+            <a><img src="../menu-bar.svg" class="menu-bar" id="menu-link-bar" onclick="show_links()"
+                    alt=""></a>
+
+            <div><a><img style="display: none" id="menu-link-close" src="../menu-close.svg" class="menu-bar"
+                         onclick="hide_links()" alt=""></a></div>
+        </div>
+    </div>
+    <div class="links_for_smaller_devices" id="menu-links" style="display: none">
+        <div class="droneshots"><a href="drone-shots.html"><span>DRONE shots</span></a></div>
+        <div class="toril"><a href="photos.html"><span>photos</span></a></div>
+        <div class="about"><a href="about.html"><span>about me</span></a></div>
+        <div class="price"><a href="price.html">price</a></div>
+        <div>
+            <a onclick="show_question()" class="button-template">language</a>
         </div>
     </div>
 </header>
+<div style="display: none" id="lang-box" class="lang-box">
+    <div class="lang_questions">
+        <div>
+            <div><p style="color: white">Valitse kieli</p></div>
+            <button class="button-template" style="border-color: #898383;"><a
+                    href="../fi/photos.html"><img
+                    class="flag-settings"
+                    src="../fin-flag.png" alt="Finnish"></a>
+            </button>
+            <p class="desc-template1">Finnish</p>
+        </div>
+        <div>
+        </div>
+        <div>
+            <div><p style="color: white">Choose Language</p></div>
+            <button class="button-template" style="border-color: #898383"><a
+                    href="../en/photos.html"><img
+                    class="flag-settings" src="../eng-flag.jpg  "
+                    alt="english"></a></button>
+
+
+            <p class="desc-template1">English</p>
+        </div>
+    </div>
+</div>
 <p class="wetxt">NSI PHOTOS</p>
 <div class="buttons">
     <button class="button-template" onclick="copyright_info_notification()">USE INFO</button>
