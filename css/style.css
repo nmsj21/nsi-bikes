@@ -49,7 +49,7 @@ header {
 .links {
     display: flex;
     flex-direction: row;
-    padding-right: 470px;
+    padding-right: 490px;
     gap: 10px;
 }
 

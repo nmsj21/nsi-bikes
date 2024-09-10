@@ -3,7 +3,7 @@
 <head>
     <title>NSI HomePage</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <script type="text/javascript" src="../remember-lang.js"></script>
+    <script type="text/javascript" src="../scripts.js"></script>
     <link rel="icon" type="image/png" href="../nsi-mid.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="NSI bikes">
@@ -17,35 +17,39 @@
             <div class="toril"><a href="photos.html"><span>KUVAT</span></a></div>
             <div class="about"><a href="about.html"><span>TIETOA</span></a></div>
             <div class="price"><a href="price.html">HINNAT</a></div>
+            <div>
+                <a onclick="hide_question()" id="lang-button" class="button-template">KIELI</a>
+            </div>
         </div>
     </div>
 </header>
-<p class="wetxt">TERVETULOA VIRALLISELLE NSI TECH SIVULLE!</p>
-<div id="lang-box" class="lang-box">
+<div  style="display: none" id="lang-box" class="lang-box">
     <div class="lang_questions">
         <div>
             <div><p style="color: white">Valitse kieli</p></div>
-            <button class="button-template" style="border-color: #898383;" onclick="ask_once_fin()"><img
+            <button class="button-template" style="border-color: #898383;"><a
+                    href="../."><img
                     class="flag-settings"
-                    src="../fin-flag.png" alt="Finnish">
+                    src="../fin-flag.png" alt="Finnish"></a>
             </button>
-            <p class="desc-template1" style="">Finnish</p>
+            <p class="desc-template1">Finnish</p>
         </div>
         <div>
         </div>
         <div>
             <div><p style="color: white">Choose Language</p></div>
-            <button class="button-template" style="border-color: #898383" onclick="ask_once_eng()"><img
+            <button class="button-template" style="border-color: #898383"><a
+                    href="../en/."><img
                     class="flag-settings" src="../eng-flag.jpg  "
-                    alt="english"></button>
+                    alt="english"></a></button>
 
 
             <p class="desc-template1">English</p>
         </div>
     </div>
 </div>
+<p class="wetxt">TERVETULOA VIRALLISELLE NSI TECH SIVULLE!</p>
 <main>
-    <button id="test" onclick="display2()">press</button>
     <div class="content-photos"><a href="photos.html"><img class="img-template1"
                                                            src="../photos-icon.jpg"
                                                            alt="Halimasjarvi, Tampere, Finland"></a>
