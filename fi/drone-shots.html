@@ -65,12 +65,37 @@
     </div>
 </div>
 <div class="up-panel"></div>
-<main>
-    <p class="wetxt">DRONE OTOKSET NSI:LT&Auml;</p>
-    <div class="buttons">
-        <button onclick="howtoquality()" class="button-template">Miten saada parempi laatu?</button>
-        <button onclick="toobigprice()" class="button-template">Liian iso hinta?</button>
+
+<p class="wetxt">DRONE OTOKSET NSI:LT&Auml;</p>
+<div class="copyright-info" id="cr-info-box" style="display: none">
+    <div style="padding-top: 50px" class="copyright-info">
+        <img style="height: 40px; margin: -32px; padding-right: 35px" onclick="quality_info_hide()"
+             src="../menu-close-white.svg" alt="">
+        <div class="copyright-text" id="texts">
+            <div class="qa-answer1">
+                <div><h3 id="qat1" style="text-align: center;">Mik&auml; ID?</h3></div>
+                <div style="color: white;text-align: center;"><p id="qa1">Huomautus: Laatua on alennettu n&auml;ist&auml;
+                    kuvista
+                    ja my&ouml;s
+                    vesileimattu ilmaisen k&auml;yt&ouml;n vuoksi.
+                    Kuvia saa k&auml;ytt&auml;&auml; somessa, jos vesileima on kuvassa/videossa tai kuva/video on
+                    ostettu. Kuvat ovat N.40% laadussa nyt, mutta myyd&auml;&auml;n 100% laadussa ja 4k
+                    resoluutiossa! Kuvan lupa ostaessa minulta: Royalty Free</p>
+
+                    <div><p id="qa2">Kun ostat kuvan/videon sinun pit&auml;&auml; toimittaa viestiss&auml;, sen l&ouml;yd&auml;t
+                        kuvan/videon yl&auml;puolelta. Kaikki kuvat t&auml; t&auml;ll&auml; sivulla myyd&auml;&auml;n
+                        NEF:iss&auml; ja/tai Jpeg:iss&auml;(4K). Voimme sopia hinnan n&auml;ille kuville ja my&ouml;s
+                        videoille. Ota vain yhteytt&auml;!</p></div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+<div class="buttons">
+    <button class="button-template" onclick="quality_info()">INFOA LAADUSTA</button>
+    <button class="button-template" onclick="what_id()">MIK&Auml; ID?</button>
+</div>
+<main>
     <div class="content-photos">
         <div class="V-0001">
             <div class="id-placement"><p class="id-template2">ID: V-0001</p></div>
@@ -102,15 +127,5 @@
         </div>
     </div>
 </footer>
-<script>
-    function howtoquality() {
-        alert("You can get 4k videos without watermarks by buying from me. Licence for all photos and videos will be Royalty Free when bought from me.")
-    }
-
-    function toobigprice() {
-        alert("We can negotiate the price down. Tell me also if you want to buy some other licensed video/image and/or lowered quality")
-    }
-
-</script>
 </body>
 </html>

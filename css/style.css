@@ -61,12 +61,12 @@ header {
     gap: 10px;
 }
 
-.link-group{
+.link-group {
     padding-right: 490px;
 }
 
-.link-group-en{
-     padding-right: 587px
+.link-group-en {
+    padding-right: 587px
 }
 
 .top-bar > div {
@@ -197,7 +197,6 @@ a:hover {
 
 }
 
-
 .img-template2 {
     height: 100%;
     width: 100%;
@@ -209,6 +208,7 @@ a:hover {
     border-radius: 20px;
 
 }
+
 
 .id-template1 {
     background: #898383;
@@ -332,6 +332,7 @@ footer {
 
 }
 
+
 .lang_questions {
     width: 700px;
     height: 500px;
@@ -347,7 +348,39 @@ footer {
     border-radius: 10px;
     align-content: center;
     justify-content: center;
+}
 
+.copyright-info {
+    width: 100%;
+    position: fixed;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+
+.copyright-text {
+    width: 509px;
+    height: 200px;
+    display: flex;
+    background-color: #898383;
+    /*padding: 5px;*/
+    border-color: white;
+    border-style: solid;
+    font-size: 20px;
+    border-width: 5px;
+    border-radius: 10px;
+    align-content: center;
+    justify-content: center;
+    color: white;
+}
+
+.qa-answer1 {
+
+    padding-top: 15px;
+    color: white
 }
 
 @media screen and (max-width: 780px) {
@@ -355,7 +388,7 @@ footer {
         font-size: 1.2rem;
     }
 
-    .toril, .price{
+    .toril, .price {
         padding-right: 8px;
     }
 
@@ -369,7 +402,7 @@ footer {
         justify-content: center;
     }
 
-    .links  {
+    .links {
         display: none;
         gap: 10px;
     }
@@ -393,15 +426,15 @@ footer {
         display: flex;
     }
 
-    .link-group{
+    .link-group {
         padding-right: 10px;
     }
 
-    .link-group-en{
+    .link-group-en {
         padding-right: 10px;
     }
 
-    .links_for_smaller_devices{
+    .links_for_smaller_devices {
         padding-left: 10px;
     }
 

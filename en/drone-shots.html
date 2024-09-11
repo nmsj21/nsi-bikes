@@ -19,13 +19,14 @@
                 <div class="about"><a href="about.html"><span>about me</span></a></div>
                 <div class="price"><a href="price.html"><span>prices</span></a></div>
                 <div>
-                    <a onclick="show_question()" class="button-template"><span>languages</span></a>
+                    <a onclick="show_question()" class="button-template"><span>language</span></a>
                 </div>
             </div>
             <a><img src="../menu-bar.svg" class="menu-bar" id="menu-link-bar" onclick="show_links()"
                     alt=""></a>
 
-            <div><a><img style="display: none" id="menu-link-close" src="../menu-close.svg" class="menu-bar" onclick="hide_links()" alt=""></a></div>
+            <div><a><img style="display: none" id="menu-link-close" src="../menu-close.svg" class="menu-bar"
+                         onclick="hide_links()" alt=""></a></div>
         </div>
     </div>
     <div class="links_for_smaller_devices" id="menu-links" style="display: none">
@@ -65,11 +66,30 @@
 </div>
 <div class="up-panel"></div>
 <p class="wetxt">DRONE SHOTS FROM NSI</p>
-<main>
-    <div class="buttons">
-        <button onclick="howtoquality()" class="button-template">How to get better quality?</button>
-        <button onclick="toobigprice()" class="button-template">Too big price?</button>
+<div class="copyright-info" id="cr-info-box" style="display: none">
+    <div style="padding-top: 50px" class="copyright-info">
+        <img style="height: 40px; margin: -32px; padding-right: 35px" onclick="quality_info_hide()"
+             src="../menu-close-white.svg" alt="">
+        <div class="copyright-text" id="texts">
+            <div class="qa-answer1">
+                <div><h3 id="qat1" style="text-align: center;">INFO ABOUT QUALITY</h3></div>
+                <div style="color: white;text-align: center;"><p id="qa1">DISCLAIMER: Quality has been lowered from
+                    these pictures and watermarked for free use. You can use my photos/videos in social media, IF it has
+                    watermarks or it has been purchased from me!</p>
+
+                    <div><p id="qa2">When you buy photo/video then you have to provide me with photo or video ID. You
+                        can find ID from above the photo/video. All photos are sold in Jpeg or/and Nef quality and
+                        resolution is also 4k. We can agree the price for photos/videos. Contact Me!</p></div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+<div class="buttons">
+    <button class="button-template" onclick="quality_info_eng()">INFO ABOUT QUALITY</button>
+    <button class="button-template" onclick="what_id_eng()">WHAT ID?</button>
+</div>
+<main>
     <div class="content-photos">
         <div class="V-0001">
             <div class="id-placement"><p class="id-template2">ID: V-0001</p></div>
@@ -89,6 +109,7 @@
                 Videos are sold in 4K. <br> Price: 14,99&#8364;(Permission: Royalty Free)</p>
             </div>
         </div>
+    </div>
 </main>
 <footer>
     <div class="down-info">
@@ -98,15 +119,5 @@
         </div>
     </div>
 </footer>
-<script>
-    function howtoquality() {
-        alert("You can get 4k videos without watermarks by buying from me. Licence for all photos and videos will be Royalty Free when bought from me.")
-    }
-
-    function toobigprice() {
-        alert("We can negotiate the price down. Tell me also if you want to buy some other licensed video/image and/or lowered quality")
-    }
-
-</script>
 </body>
 </html>
